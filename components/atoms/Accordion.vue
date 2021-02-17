@@ -2,6 +2,7 @@
   <li class="accordion">
     <h4
       :id="`accordion-${_uid}`"
+      class="accordion-title"
       :class="{ 'accordion-expanded': panelIsVisible }"
       @click="handleAccordion()"
     >
@@ -58,8 +59,14 @@ export default {
 
     openPanel() {
       this.panelIsVisible = true
-      this.$router.push(`#accordion-${this._uid}`)
+      this?.$router?.push(`#accordion-${this._uid}`)
     },
   },
 }
 </script>
+
+<style scoped>
+.accordion {
+  cursor: pointer;
+}
+</style>
