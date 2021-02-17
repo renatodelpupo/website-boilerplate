@@ -15,3 +15,7 @@ Install Nuxt with this configuration:
 **Development tools:** jsconfig.json, Semantic Pull Requests (optional)  
 **Continuous integration:** None  
 **Version control system:** Git  
+
+## Step 2
+
+Clean Nuxt initial files.
