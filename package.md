@@ -23,3 +23,8 @@ Install Nuxt with this configuration:
 Clean Nuxt initial files.
 
 [See correspondent commit](https://github.com/renatodelpupo/website-boilerplate/commit/86c3c89ac6c055a9683675981e62b0905923956f).
+
+
+## Step 3
+
+Add necessary components. [Visit the Storybook page to preview examples](https://renatodelpupo.github.io/website-boilerplate/index.html).

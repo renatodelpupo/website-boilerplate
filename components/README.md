@@ -1,7 +1,7 @@
-# COMPONENTS
-
-**This directory is not required, you can delete it if you don't want to use it.**
+# Components
 
 The components directory contains your Vue.js Components.
 
-_Nuxt.js doesn't supercharge these components._
+## Storybook Preview
+
+[Visit the Storybook page to preview](https://renatodelpupo.github.io/website-boilerplate/index.html).
