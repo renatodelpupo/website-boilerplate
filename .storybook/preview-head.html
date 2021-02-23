@@ -1,0 +1,37 @@
+<style>
+  .btn {
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  .btn:disabled {
+    background: gray;
+    border-color: gray;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  .btn:hover:not(:disabled) {
+    background: black;
+    color: white;
+  }
+
+  .link {
+    color: blue;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .link:hover {
+    text-decoration: none;
+  }
+</style>

@@ -16,7 +16,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { Btn },
-  template: '<btn v-bind="$props">Hi man</btn>',
+  template: '<btn v-bind="$props">Call to action</btn>',
 })
 
 export const Default = Template.bind({})
