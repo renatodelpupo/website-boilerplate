@@ -16,12 +16,22 @@ export default {
     }
   },
 
+  props: {
+    mountFirstOpened: {
+      default: true,
+      type: Boolean,
+    },
+  },
+
   data: () => ({
     accordionsList: [],
   }),
 
   methods: {
     addToAccordionsList(accordion) {
+      if (this.mountFirstOpened && this.accordionsList.length < 1)
+        this.$set(accordion.$data, 'panelIsVisible', true)
+
       this.accordionsList.push(accordion)
     },
 
