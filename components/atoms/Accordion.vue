@@ -1,20 +1,22 @@
 <template>
   <li class="accordion">
     <h4
-      :id="`accordion-${_uid}`"
       :aria-controls="_uid"
       :aria-selected="panelIsVisible"
       class="accordion-title"
       :class="{ 'accordion-expanded': panelIsVisible }"
+      :id="`accordion-${_uid}`"
       role="tab"
       tabindex="0"
       @click="handleAccordion()"
+      @keyup.enter="handleAccordion()"
     >
       <span v-text="accordionTitleIcon" />
       <span><slot name="title" /></span>
     </h4>
     <div
       :aria-labelledby="_uid"
+      class="accordion-panel"
       role="tabpanel"
       tabindex="0"
       v-show="panelIsVisible"
@@ -68,14 +70,14 @@ export default {
 
     openPanel() {
       this.panelIsVisible = true
-      this?.$router?.push(`#accordion-${this._uid}`)
+      this.$router?.push(`#accordion-${this._uid}`)
     },
   },
 }
 </script>
 
 <style scoped>
-.accordion {
+.accordion-title {
   cursor: pointer;
 }
 </style>
