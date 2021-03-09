@@ -1,5 +1,5 @@
 <template>
-  <ul class="accordion-wrapper">
+  <ul class="accordion-wrapper" role="tablist">
     <slot />
   </ul>
 </template>

@@ -2,14 +2,23 @@
   <li class="accordion">
     <h4
       :id="`accordion-${_uid}`"
+      :aria-controls="_uid"
+      :aria-selected="panelIsVisible"
       class="accordion-title"
       :class="{ 'accordion-expanded': panelIsVisible }"
+      role="tab"
+      tabindex="0"
       @click="handleAccordion()"
     >
       <span v-text="accordionTitleIcon" />
       <span><slot name="title" /></span>
     </h4>
-    <div v-show="panelIsVisible">
+    <div
+      :aria-labelledby="_uid"
+      role="tabpanel"
+      tabindex="0"
+      v-show="panelIsVisible"
+    >
       <slot name="panel" />
     </div>
   </li>
